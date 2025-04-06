@@ -1,0 +1,19 @@
+.footer {
+    @apply bg-gray-800 text-white py-4 text-center;
+}
+
+.footer__text {
+    @apply text-sm; 
+}
+
+@media (max-width: 768px) {
+    .footer__text {
+        @apply text-xs; 
+    }
+}
+
+@media (max-width: 480px) {
+    .footer__text {
+        @apply text-[0.75rem]; 
+    }
+}

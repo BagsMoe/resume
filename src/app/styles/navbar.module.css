@@ -1,0 +1,32 @@
+/* Navbar container */
+.navbar {
+    @apply bg-gray-800 text-white sticky top-0 z-50;
+}
+
+.navbar__container {
+    @apply container mx-auto flex justify-between items-center py-4 px-6;
+}
+
+.navbar__logo {
+    @apply text-2xl font-bold cursor-pointer;
+}
+
+.navbar__toggle {
+    @apply lg:hidden text-2xl focus:outline-none;
+}
+
+.navbar__menu {
+    @apply lg:flex lg:items-center lg:gap-6 absolute lg:static top-16 right-0 bg-gray-800 lg:bg-transparent w-full lg:w-auto transition-all duration-300 hidden;
+}
+
+.navbar__menu.active {
+    @apply block;
+}
+
+.navbar__item {
+    @apply text-center py-2 lg:py-0;
+}
+
+.navbar__link {
+    @apply hover:text-teal-400;
+}
