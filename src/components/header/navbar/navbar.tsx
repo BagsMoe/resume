@@ -91,7 +91,7 @@ export default function Navbar() {
                     <li className="text-center py-2 lg:py-0">
                         <Link
                             href="/"
-                            className={`hover:text-teal-400 font-semibold ${
+                            className={`hover:text-amber-500 font-semibold ${
                                 pathname === "/" ? "text-amber-600 font-semibold" : ""
                             }`}
                             onClick={closeMenu}
@@ -102,7 +102,7 @@ export default function Navbar() {
                     <li className="text-center py-2 lg:py-0">
                         <Link
                             href="/about"
-                            className={`hover:text-teal-400 font-semibold ${
+                            className={`hover:text-amber-500 font-semibold ${
                                 pathname === "/about" ? "text-amber-600 font-semibold" : ""
                             }`}
                             onClick={closeMenu}
@@ -113,7 +113,7 @@ export default function Navbar() {
                     <li className="text-center py-2 lg:py-0">
                         <Link
                             href="/projects"
-                            className={`hover:text-teal-400 font-semibold ${
+                            className={`hover:text-amber-500 font-semibold ${
                                 pathname === "/projects" ? "text-amber-600 font-semibold" : ""
                             }`}
                             onClick={closeMenu}
@@ -124,7 +124,7 @@ export default function Navbar() {
                     <li className="text-center py-2 lg:py-0">
                         <Link
                             href="/skills"
-                            className={`hover:text-teal-400 font-semibold ${
+                            className={`hover:text-amber-500 font-semibold ${
                                 pathname === "/skills" ? "text-amber-600 font-semibold" : ""
                             }`}
                             onClick={closeMenu}
@@ -135,7 +135,7 @@ export default function Navbar() {
                     <li className="text-center py-2 lg:py-0">
                         <Link
                             href="/contact"
-                            className={`hover:text-teal-400 font-semibold ${
+                            className={`hover:text-amber-500 font-semibold ${
                                 pathname === "/contact" ? "text-amber-600 font-semibold" : ""
                             }`}
                             onClick={closeMenu}
