@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { FaPhoneAlt, FaEnvelope, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function Contact() {
     const [formData, setFormData] = useState({
@@ -30,8 +31,6 @@ export default function Contact() {
             email: "",
             message: "",
         });
-
-        // Optionally, you can integrate an API call here to send the form data
     };
 
     return (
@@ -41,7 +40,7 @@ export default function Contact() {
             {isSubmitted && (
                 <p className="text-green-500 mb-4">Thank you! Your message has been sent.</p>
             )}
-            <form className="w-full max-w-md" onSubmit={handleSubmit}>
+            <form className="w-full max-w-md mb-12" onSubmit={handleSubmit}>
                 <div className="mb-4">
                     <label htmlFor="name" className="block text-white mb-2">
                         Name
@@ -88,6 +87,49 @@ export default function Contact() {
                     Send
                 </button>
             </form>
+
+            {/* Discover Me Section */}
+            <div className="w-full max-w-md bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h2 className="text-2xl font-bold text-amber-500 mb-4 text-center">Discover Me</h2>
+                <div className="flex flex-col gap-4">
+                    <a
+                        href="https://wa.me/6282324801277"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-4 text-white hover:text-amber-500 transition"
+                    >
+                        <FaPhoneAlt className="text-2xl" />
+                        <span>+6282324801277</span>
+                    </a>
+                    <a
+                        href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=baguzt.abduh@gmail.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-4 text-white hover:text-amber-500 transition"
+                    >
+                        <FaEnvelope className="text-2xl" />
+                        <span>baguzt.abduh@gmail.com</span>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/bagus-moehamad"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-4 text-white hover:text-amber-500 transition"
+                    >
+                        <FaLinkedin className="text-2xl" />
+                        <span>LinkedIn</span>
+                    </a>
+                    <a
+                        href="https://www.instagram.com/bagusmoehamad/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-4 text-white hover:text-amber-500 transition"
+                    >
+                        <FaInstagram className="text-2xl" />
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>
         </main>
     );
 }
